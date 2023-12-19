@@ -1,0 +1,332 @@
+
+/* definição de caracters no padrão com acentuação ABNT2 */
+@charset "UTF-8";
+
+/* importação da fonte padrão ou mais utilizada  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+
+/* veriaveis de ambiente */
+:root {
+    /* --nome_da_variavel: valor; */
+    /* padrão dos cores */
+    --cor-branca: rgb(255, 255, 255);
+    --cor-preta: rgb(17, 17, 17);
+    
+    /* padrão das fontes */
+    --nunito: 'Nunito Sans', sans-serif;
+
+}
+
+/* reset do site das configuração padrões do navagedor */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;   
+    list-style: none;
+    /* box-sizing: border-box; */
+}
+
+html {
+    /* fonte padrão usada em todo o site */
+    font-family: var(--nunito);
+}
+
+body {
+    /* fonte padrão usada em todo o site */
+    background-color: var(--cor-branca);
+}
+
+
+
+/* Style do lado da navageção */
+.sidenav {
+    width: 250px; /* largura */
+    height: 100%; /* altura */
+    position: fixed; /* fixa a pocisão independendo da rolagem para baixo do site*/
+    background-color: var(--cor-preta); /* cor do fundo  */
+}
+
+/* logo */
+.logo {
+    width: 180px;
+    height: 180px;
+    margin: 32px;
+}
+
+/* links */
+a.menu {
+    margin: 0 32px 0 32px;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a.menu:hover {
+    background-color: rgb(221, 221, 221);
+    color: rgb(17, 17, 17);
+}
+  
+.rs {
+    margin: 0 32px 0 32px;
+    padding: 16px 16px 14px 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 18px;
+    
+}
+
+
+
+
+/* conteudo principal */
+
+main {
+    position: relative;
+    left: 250px;
+    width: calc(100% - 250px);
+    background-color: rgb(255, 255, 255);
+    color: var(--cor-preta);
+}
+
+section.principal {
+    background-image: url("../images/fundo-principal.jpg");
+    background-position: center center;
+    height: 900px;
+}
+
+.principal > h1 {
+    margin: 0 30px 0 40px;
+    padding-top: 350px;
+    color: rgb(255, 239, 115);
+    font-size: 4em; /*64px*/
+}
+
+section > p {
+    margin: 20px 0 0 40px;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+}
+
+section button {
+    margin: 20px 0 0 40px;
+    background-color: rgb(255, 239, 115);
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(240, 240, 240, 0.25);
+    border-radius: 10px;
+    font-size: 2em; /*32px*/
+    color: rgb(17, 17, 17);
+}
+
+section button:hover {
+    background-color: rgba(255, 223, 216, 0.75);
+}
+
+
+
+/* Style do conteudo Resultados */
+
+.resultados {
+    background-color:  rgb(138, 31, 28);
+    height: 850px;
+    color: rgb(255, 255, 255);
+    padding: 80px 80px 0px 80px;
+    font-size: 70px;
+}
+
+.resultados.card {
+    max-width: 1527px;
+    height: 645px;
+}
+
+section.resultados > aside.card > div.row {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+section.resultados > aside.card > div > div.column {
+    height: 370px;
+    width: 350px;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+section.resultados > aside.card > div > div.column > p {
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+
+/* Style do conteudo Especialidades */
+
+.especialidades {
+    background-color:  rgb(255, 255, 255);
+    height: 850px;
+    color: rgb(17, 17, 17);
+}
+
+.especialidades > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 50px 150px 50px;
+}
+
+.especialidades.card {
+    max-width: 1527px;
+    height: 645px;
+}
+
+.especialidades > aside > div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+}
+
+
+
+
+
+/* Style do conteudo planos */
+
+.planos > aside.micro {
+    /*background-color:  rgb(255, 255, 255);*//* esse que fica*/
+    background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.planos > aside.micro > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 500px 50px 500px;
+}
+
+.planos > aside.mei {
+    /*background-color:  rgb(255, 255, 255);*//* esse que fica*/
+    background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.planos > aside.mei >h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 500px 50px 500px;
+}
+
+
+
+/* Style do conteudo Serviços */
+
+.servicos {
+    background-color:  rgb(255, 255, 255);/* esse que fica*/
+    /*background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.servicos > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 570px 50px 570px;
+}
+
+
+
+/* Style do conteudo Clientes */
+
+.clientes {
+    /*background-color:  rgb(255, 255, 255);*//* esse que fica*/
+    background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.clientes > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 500px 50px 500px;
+}
+
+
+
+/* Style do conteudo Comunidade */
+
+.comunidade {
+    background-color:  rgb(255, 255, 255);/* esse que fica*/
+    /*background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.comunidade > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 500px 50px 500px;
+}
+
+
+
+/* Style do conteudo Orçamento */
+
+.orcamento {
+    /*background-color:  rgb(255, 255, 255);*//* esse que fica*/
+    background-color:  rgb(241, 200, 200); /*teste do tamnho da tela*/
+    height: 850px;
+    color: rgb(17, 17, 17);
+    font-size: 70px;
+}
+
+.orcamento > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 450px 50px 450px;
+}
+
+
+
+/* Style do conteudo Contatos */
+
+.contatos {
+    background-color:  rgb(17, 17, 17);
+    height: 850px;
+    color: rgb(255, 255, 255);
+}
+
+.contatos > h2 {
+    text-align: center; 
+    font-size: 45px;
+    padding: 100px 500px 50px 500px;
+}
+
+
+
+/* Style do footer */
+
+footer {
+    background-color: rgb(255, 255, 255);
+    height: 61px;
+    color: rgb(17, 17, 17);
+    text-align: center; 
+    padding-top: 20px ;
+}
+
