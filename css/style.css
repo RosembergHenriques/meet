@@ -93,8 +93,10 @@ main {
 
 section.principal {
     background-image: url("../images/fundo-principal.jpg");
-    background-position: center center;
-    height: 900px;
+    background-position: center center; /* pocisiona no centro eixo x e y */
+    background-repeat: no-repeat; /* faz com que a imagem não se repita */
+    background-size: cover; /* picota a imegem para preencher todos os expaços  */
+    height: 900px; /* altura da seção  */
 }
 
 .principal > h1 {
