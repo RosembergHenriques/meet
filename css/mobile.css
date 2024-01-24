@@ -14,9 +14,9 @@
 @media screen and (min-width: 600px) and (max-width: 768px) {
     /* por as configurações para dispositivos mobile  */
     
-        
-    menu#menu { display: none; }   /* mostra menu ou não */
-
-
+    /* mostra menu ou não */
+    menu#menu { 
+        display: none;
+    }   
 
 }

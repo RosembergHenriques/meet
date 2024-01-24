@@ -94,28 +94,41 @@ menu#menu {
 }
 
 menu li {
-    margin: 5px ;
+    background-color: blue;
+    margin: 10px 0px;
 }
 
 menu a {
     color: var(--cor-branca);
     font-size: 1.0em; /*16px*/
-    padding: 5px ;
-    
+    padding: 5px 0px;
 }
 
 i#plano {
     color: var(--cor-branca);
+    padding: 5px;
+    cursor: pointer;
 }
 
-.sub-menu {
-    display: none;
+i#plano:hover {
+    
+    color: var(--cor-preta);
+}
+
+ul#sub_menu {
+    display: none;   
 }
 
 menu a:hover {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
 }
+
+ul#sub_menu > li {
+    background-color: blue;
+    margin-left: 50px;
+}
+
 
 i#burguer {
     display: block;
@@ -148,7 +161,7 @@ main {
 
 section {
     background-color: white;
-    height: 905px;  /* Tamanho da Tele */
+    height: 900px;  /* Tamanho da Tele */
 
 }
 

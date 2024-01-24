@@ -36,7 +36,7 @@
                     <li>
                         <a href="#planos">PLANOS</a>
                         <i id="plano" class="material-icons" onclick="clickPlano()">expand_more</i>
-                        <ul class="sub-menu">
+                        <ul id="sub_menu">
                             <li>
                                 <a href="#micro">Micro Empresa</a>
                             </li>
@@ -104,17 +104,23 @@
         <!-- <aside>Relacionado</aside>
         <footer>Rodape</footer> -->
 
-        
         <script>
+        
             function clickMenu() {
                 if (menu.style.display == 'block') {
                     menu.style.display = 'none'
                 } else {
                     menu.style.display = 'block'
                 }
-                    
             }
-                
+
+            function clickPlano() {
+                if (sub_menu.style.display == 'block') {
+                    sub_menu.style.display = 'none'
+                } else {
+                    sub_menu.style.display = 'block'
+                }
+            }
 
         </script>
 

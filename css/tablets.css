@@ -15,7 +15,7 @@
     /* por as configurações para dispositivos Tablets  */
 
     nav {
-        flex: 1 1 200px; /* uso da abreveatura para o flex */
+        flex: 1 1 250px; /* uso da abreveatura para o flex */
         /*flex-grow: 1;       /* Hebilidade de um flex item crescer */
         /*flex-shrink: 1;     /* Capacidade de redução do item */
         /*flex-basis: 200px;  /* Tamanho inicial de item */
@@ -25,12 +25,23 @@
         display: none;
     }
 
-    menu {
+    menu#menu {
         display: block;
+        
+    }
+    
+    menu li {
+        margin: 20px 0px;
     }
 
+    main {
+        background-color: var(--cor-preta);
+        flex: 20 1 400px;
+        flex-direction: column;
+    }
+    
     section {        
-        height: 905px;  /* Tamanho da Tele */
+        height: 900px;  /* Tamanho da Tele */
     }
     
     

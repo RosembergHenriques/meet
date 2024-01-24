@@ -14,12 +14,31 @@
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     /* por as configurações para dispositivos Notbooks e Desktops  */
 
-    .menu#menu { display: block; }
+    nav {
+        flex: 1 1 250px; /* uso da abreveatura para o flex */
+        /*flex-grow: 1;       /* Hebilidade de um flex item crescer */
+        /*flex-shrink: 1;     /* Capacidade de redução do item */
+        /*flex-basis: 200px;  /* Tamanho inicial de item */
+    }
 
-    section {
+    i#burguer {
+        display: none;
+    }
+
+    menu#menu {
+        display: block;
         
-        height: 905px;  /* Tamanho da Tele */
+    }
+
+    main {
+        background-color: var(--cor-preta);
+        flex: 20 1 400px;
+        flex-direction: column;
+    }
     
+
+    section {        
+        height: 900px;  /* Tamanho da Tele */
     }
     
 }
