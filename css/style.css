@@ -1,0 +1,180 @@
+/* definição de caracters no padrão com acentuação ABNT2 */
+@charset "UTF-8";
+
+/* importação da fonte padrão ou mais utilizada  */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap');
+
+/* veriaveis de ambiente */
+:root {
+    /* --nome_da_variavel: valor; */
+    /* padrão dos cores */
+    --cor-branca: rgb(255, 255, 255);
+    --cor-preta: rgb(0, 0, 0);
+    
+    /* padrão das fontes */
+    --nunito: 'Nunito Sans', sans-serif;
+}
+
+/* Tamanho das telas e seus padrões */
+/* Device breakpoints
+    Pequenas telas: até 600px
+    Celular de 600px até 768px
+    Tablets de 768px até 992px
+    Desktop de 992px até 1200px
+    Grandes tels a cima de 1200px 
+*/
+
+/* As configurações para dispositivos mobile First são abaixo
+    e as demais de cima herdão as configurações e basta por
+    só o nescessario  */
+
+    
+/* reset do site das configuração padrões do navagedor */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;   
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html {
+    /* fonte padrão usada em todo o site */
+    font-family: var(--nunito);
+}
+
+body {
+    /* fonte padrão usada em todo o site */
+    min-width: 500px;
+    background-color: var(--cor-branca);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header, nav, main, aside, section, footer {
+    display: flex;
+}
+
+header {
+    flex-grow: 1;       /* Hebilidade de um flex item crescer */
+    flex-shrink: 1;     /* Capacidade de redução do item */
+    flex-basis: 100vw;  /* Tamanho inicial de item */ 
+    height: 100px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-preta);    
+    flex: 1 1 200px; /* uso da abreveatura para o flex */
+        /*flex-grow: 1;       /* Hebilidade de um flex item crescer */
+        /*flex-shrink: 1;     /* Capacidade de redução do item */
+        /*flex-basis: 200px;  /* Tamanho inicial de item */
+    align-items: center;
+
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+}
+
+/* mostra menu ou não */
+menu#menu { 
+    display: none;
+}   
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+menu li {
+    margin: 5px ;
+}
+
+menu a {
+    color: var(--cor-branca);
+    font-size: 1.0em; /*16px*/
+    padding: 5px ;
+    
+}
+
+i#plano {
+    color: var(--cor-branca);
+}
+
+.sub-menu {
+    display: none;
+}
+
+menu a:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+}
+
+i#burguer {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    color: var(--cor-branca);
+}
+
+i#burguer:hover {
+    background-color: var(--cor-branca);
+    color: var(--cor-preta);
+}
+
+.redessociais {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 32px;
+    margin: 10px;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+main {
+    background-color: var(--cor-preta);
+    flex: 20 1 565px;
+    flex-direction: column;
+}
+
+section {
+    background-color: white;
+    height: 905px;  /* Tamanho da Tele */
+
+}
+
+#principal {
+    padding: 20px;
+    background-image: url("../images/fundo-principal.jpg");
+    background-position: center center; /* pocisiona no centro eixo x e y */
+    background-repeat: no-repeat; /* faz com que a imagem não se repita */
+    background-size: cover; /* picota a imegem para preencher todos os expaços  */
+    color: rgb(255, 239, 115);
+    font-size: 1em; /*32px*/
+}
+
+#resultados {
+    background-color: var(--cor-branca);
+    
+}
+/* --------------------------------------------------------------------------------- */
+
+aside {
+    flex: 1 1 250px;
+ }
+ 
+/* --------------------------------------------------------------------------------- */
+
+footer {
+    flex: 1 1 100vw;
+    height: 100px;
+}

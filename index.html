@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Meet Acessoria</title>
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+
+        <!-- contrução com base nos padrão Mobile First com medias -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/mobile.css">
+        <link rel="stylesheet" href="css/tablets.css">
+        <link rel="stylesheet" href="css/desktop.css">
+        <link rel="stylesheet" href="css/tvs.css">
+        <link rel="stylesheet" href="css/impressora.css">
+
+        
+
+    </head>
+    <body>
+
+        <!-- <header>Cabeçalho</header> -->
+        <nav id="nav">
+            <a href="#">
+                <img class="logo" src="images/logo/logo-baixa.png" alt="logo">
+            </a>
+            <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+            <menu id="menu">
+                <ul class="menu">
+                    <li>
+                        <a href="#resultados">RESULTADOS</a>
+                    </li>
+                    <li>
+                        <a href="#especialidades">ESPECIALIDADES</a>
+                    </li>
+                    <li>
+                        <a href="#planos">PLANOS</a>
+                        <i id="plano" class="material-icons" onclick="clickPlano()">expand_more</i>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#micro">Micro Empresa</a>
+                            </li>
+                            <li>
+                                <a href="#mei">Meis</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#servicos">SERVIÇOS</a>
+                    </li>
+                    <li>
+                        <a href="#clientes">CLIENTES</a>
+                    </li>
+                    <li>
+                        <a href="#comunidade">COMUNIDADE EMPREENDER</a>
+                    </li>
+                    <li>
+                        <a href="#orcamento">ORÇAMENTO</a>
+                    </li>
+                    <li>
+                        <a href="#contatos">CONTATOS</a>
+                    </li>
+                </ul>
+            </menu>
+            <ul>
+                <li class="redessociais" >
+                    <a href="https://www.facebook.com/MeetAssessoria/" target="_blank">
+                        <img src="images/redessociais/cor-facebook-40.png" alt="facebook">
+                    </a>
+                    <a href="https://www.instagram.com/meetassessoria/" target="_blank">
+                    <img src="images/redessociais/cor-instagram-40.png" alt="instagran">
+                    </a>
+                    <a href="https://www.linkedin.com/company/meetassessoria/?originalSubdomain=br" target="_blank">
+                    <img src="images/redessociais/cor-linkedin-40.png" alt="instagran">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <!-- Principal
+            <!-- <section>seções que pode conter as noticias separado por seções</section> -->
+            <section id="principal">
+                <article>
+                    <h1>QUE TAL SE PREOCUPAR COM O QUE REALMENTE IMPORTA?</h1>
+                    <br>
+                    <p>Você cuida do sue cliente. Nós cuidamos do resto.</p>
+                    <br>
+                    <a href="#resultados"><button>CONHEÇAR</button></a>
+                </article>
+            </section>
+                        
+            <section id="resultados">
+                <article>
+                    <p>SEÇÃO 2</p>
+                </article>
+            </section>
+            <!-- 
+            <section id="s3"><p>SEÇÃO 3</p></section>
+            <section id="s4"><p>SEÇÃO 4</p></section>
+            <section id="s5"><p>SEÇÃO 5</p></section>
+            -->
+        </main>
+        <!-- <aside>Relacionado</aside>
+        <footer>Rodape</footer> -->
+
+        
+        <script>
+            function clickMenu() {
+                if (menu.style.display == 'block') {
+                    menu.style.display = 'none'
+                } else {
+                    menu.style.display = 'block'
+                }
+                    
+            }
+                
+
+        </script>
+
+    </body>
+</html>
+
+

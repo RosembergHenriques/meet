@@ -1,0 +1,37 @@
+/* definição de caracters no padrão com acentuação ABNT2 */
+@charset "UTF-8";
+
+/* Tamanho das telas e seus padrões */
+/* Device breakpoints
+    Pequenas telas: até 600px
+    Celular de 600px até 768px
+    Tablets de 768px até 992px
+    Desktop de 992px até 1200px
+    Grandes tels a cima de 1200px 
+*/
+
+/*  Trabalhando com midias */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* por as configurações para dispositivos Tablets  */
+
+    nav {
+        flex: 1 1 200px; /* uso da abreveatura para o flex */
+        /*flex-grow: 1;       /* Hebilidade de um flex item crescer */
+        /*flex-shrink: 1;     /* Capacidade de redução do item */
+        /*flex-basis: 200px;  /* Tamanho inicial de item */
+    }
+
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    section {        
+        height: 905px;  /* Tamanho da Tele */
+    }
+    
+    
+}

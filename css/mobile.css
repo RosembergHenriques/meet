@@ -1,0 +1,22 @@
+/* definição de caracters no padrão com acentuação ABNT2 */
+@charset "UTF-8";
+
+/* Tamanho das telas e seus padrões */
+/* Device breakpoints
+    Pequenas telas: até 600px
+    Celular de 600px até 768px
+    Tablets de 768px até 992px
+    Desktop de 992px até 1200px
+    Grandes tels a cima de 1200px 
+*/
+
+/*  Trabalhando com midias */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    /* por as configurações para dispositivos mobile  */
+    
+        
+    menu#menu { display: none; }   /* mostra menu ou não */
+
+
+
+}

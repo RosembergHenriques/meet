@@ -1,0 +1,45 @@
+/* definição de caracters no padrão com acentuação ABNT2 */
+@charset "UTF-8";
+
+/* Tamanho das telas e seus padrões */
+/* Device breakpoints
+    Pequenas telas: até 600px
+    Celular de 600px até 768px
+    Tablets de 768px até 992px
+    Desktop de 992px até 1200px
+    Grandes tels a cima de 1200px 
+*/
+
+/*  Trabalhando com midias */
+@media print {
+    /* por as configurações para dasebilitar as coisas para não sair na impressão */
+    
+    * {
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+
+    nav { 
+        display: none; 
+    }
+
+    main {
+        text-align: left;
+        width: 100vw;
+    }
+
+    section {
+        border: 1px solid black;
+        padding: 30px;
+        height: 1010px ;
+    }
+
+    button {
+        display: none;
+    }
+    
+
+}
