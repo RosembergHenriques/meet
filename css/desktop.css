@@ -29,6 +29,10 @@
         display: block;
         
     }
+    
+    menu li {
+        margin: 15px 0px;
+    }
 
     main {
         background-color: var(--cor-preta);
@@ -36,9 +40,9 @@
         flex-direction: column;
     }
     
-
     section {        
         height: 900px;  /* Tamanho da Tele */
     }
+    
     
 }

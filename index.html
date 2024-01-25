@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="css/impressora.css">
 
     </head>
-    <body>
+    <body onresize="mudouTamanho()">
 
         <!-- <header>Cabeçalho</header> -->
         <nav id="nav">
@@ -36,7 +36,7 @@
                     <li>
                         <a href="#planos">PLANOS</a>
                         <i id="plano" class="material-icons" onclick="clickPlano()">expand_more</i>
-                        <ul id="sub_menu">
+                        <ul id="sub_menu" class="sub-menu">
                             <li>
                                 <a href="#micro">Micro Empresa</a>
                             </li>
@@ -105,20 +105,30 @@
         <footer>Rodape</footer> -->
 
         <script>
-        
+            function mudouTamanho() {
+                if (window.innerWidth >= 768) {
+                    menu.style.display = 'block';
+                    /*sub_menu.style.display = 'block';*/
+                } else {
+                    menu.style.display = 'none';
+                    /*sub_menu.style.display = 'none';*/
+                }
+                
+            }
+
             function clickMenu() {
                 if (menu.style.display == 'block') {
-                    menu.style.display = 'none'
+                    menu.style.display = 'none';
                 } else {
-                    menu.style.display = 'block'
+                    menu.style.display = 'block';
                 }
             }
 
             function clickPlano() {
                 if (sub_menu.style.display == 'block') {
-                    sub_menu.style.display = 'none'
+                    sub_menu.style.display = 'none';
                 } else {
-                    sub_menu.style.display = 'block'
+                    sub_menu.style.display = 'block';
                 }
             }
 

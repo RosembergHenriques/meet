@@ -90,11 +90,11 @@ menu#menu {
 .menu {
     display: flex;
     flex-direction: column;
+    width: 300px;
     align-items: center;
 }
 
 menu li {
-    background-color: blue;
     margin: 10px 0px;
 }
 
@@ -104,35 +104,36 @@ menu a {
     padding: 5px 0px;
 }
 
+/* itens do sub menu */
 i#plano {
     color: var(--cor-branca);
-    padding: 5px;
     cursor: pointer;
+    margin: 0px 15px;
 }
 
 i#plano:hover {
-    
-    color: var(--cor-preta);
+    color: var(--cor-branca);
 }
 
 ul#sub_menu {
     display: none;   
+    
 }
+
+.sub-menu {
+    margin-left: 20px;
+}
+
+/* fim dos itens do sub menu */
 
 menu a:hover {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
 }
 
-ul#sub_menu > li {
-    background-color: blue;
-    margin-left: 50px;
-}
-
-
 i#burguer {
     display: block;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
     color: var(--cor-branca);
 }
