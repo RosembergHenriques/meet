@@ -11,9 +11,10 @@
     --cor-branca: rgb(255, 255, 255);
     --cor-preta: rgb(0, 0, 0);
     --cor-dourado: rgb(155, 120, 39);
+    --cor-dourado-claro: rgb(214, 174, 81);
     --cor-amarelo: rgb(255, 239, 115);
     --cor-sombra: rgba(255, 255, 255, 0.1);
-    --cor-principal: rgb(138, 31, 28);
+    --cor-resultado: rgb(138, 31, 28);
     
     /* padrão das fontes */
     --nunito: 'Nunito Sans', sans-serif;
@@ -83,7 +84,7 @@ i#burguer {
 }
 
 i#burguer:hover {
-    background-color: var(--cor-branca);
+    background-color: var(--cor-dourado-claro);
     color: var(--cor-preta);
 }
 
@@ -156,7 +157,6 @@ i#burguer:hover {
     transform: translateY(-50%) rotate(-180deg);
 }
 
-
 .menu a:hover {
     background-color: var(--cor-branca);
     color: var(--cor-preta);
@@ -180,9 +180,8 @@ main {
 }
 
 section {
-    background-color: white;
+    background-color: var(--cor-branca);
     height: 900px;  /* Tamanho da Tele */
-
 }
 
 #principal {
@@ -191,23 +190,68 @@ section {
     background-position: center center; /* pocisiona no centro eixo x e y */
     background-repeat: no-repeat; /* faz com que a imagem não se repita */
     background-size: cover; /* picota a imegem para preencher todos os expaços  */
-    color: rgb(255, 239, 115);
-    font-size: 1em; /*32px*/
+    color: var(--cor-dourado-claro);
+    color: var(--cor-dourado-claro);
 }
+
+
 
 #resultados {
-    background-color: var(--cor-branca);
+    padding: 20px;
+    background-color: var(--cor-resultado);
     
 }
-/* --------------------------------------------------------------------------------- */
 
-aside {
-    flex: 1 1 250px;
- }
+#especialidades {
+    padding: 20px;
+    
+    
+}
+
+#micro {
+    padding: 20px;
+    
+    
+}
+
+#mei {
+    padding: 20px;
+    
+    
+}
+
+#servicos {
+    padding: 20px;
+    
+    
+}
+
+#comunidade {
+    padding: 20px;
+    background-image: url("../images/fundo-comunidade-empreender.jpg");
+    background-position: center center; /* pocisiona no centro eixo x e y */
+    background-repeat: no-repeat; /* faz com que a imagem não se repita */
+    background-size: cover; /* picota a imegem para preencher todos os expaços  */
+    color: var(--cor-dourado-claro);
+    
+    
+}
+
+#clientes {
+    padding: 20px;
  
-/* --------------------------------------------------------------------------------- */
+    
+}
 
-footer {
-    flex: 1 1 100vw;
-    height: 100px;
+#orcamento {
+    padding: 20px;
+ 
+    
+}
+
+#contatos {
+    padding: 20px;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+    
 }
