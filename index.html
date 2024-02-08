@@ -4,6 +4,8 @@
         <meta charset="UTF-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+        
         <title>Meet Acessoria</title>
 
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
@@ -16,70 +18,60 @@
         <link rel="stylesheet" href="css/tvs.css">
         <link rel="stylesheet" href="css/impressora.css">
 
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
     </head>
     <body onresize="mudouTamanho()">
 
         <!-- <header>Cabeçalho</header> -->
-        <nav id="nav">
+
+        <nav id="nav" class="sidbar"> 
+
             <a href="#">
                 <img class="logo" src="images/logo/logo-baixa.png" alt="logo">
             </a>
+
             <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-            <menu id="menu">
-                <ul class="menu">
+
+            
+            <menu id="menu" class="menu">
+                <ul>
+                    <li><a href="#resultados">resultados</a></li>
+                    <li><a href="#especialidades">especialidades</a></li>
+
                     <li>
-                        <a href="#resultados">RESULTADOS</a>
-                    </li>
-                    <li>
-                        <a href="#especialidades">ESPECIALIDADES</a>
-                    </li>
-                    <li>
-                        <a href="#planos">PLANOS</a>
-                        <i id="plano" class="material-icons" onclick="clickPlano()">expand_more</i>
-                        <ul id="sub_menu" class="sub-menu">
-                            <li>
-                                <a href="#micro">Micro Empresa</a>
-                            </li>
-                            <li>
-                                <a href="#mei">Meis</a>
-                            </li>
+                        <a href="#" class="plano-btn" onclick="clickPlano()">planos
+                            <span class="material-icons expand">expand_more</span>
+                        </a>
+                        <ul class="plano-show">
+                            <li><a href="#micro">micro</a></li>
+                            <li><a href="#mei">mei</a></li>
                         </ul>
                     </li>
-                    <li>
-                        <a href="#servicos">SERVIÇOS</a>
-                    </li>
-                    <li>
-                        <a href="#clientes">CLIENTES</a>
-                    </li>
-                    <li>
-                        <a href="#comunidade">COMUNIDADE EMPREENDER</a>
-                    </li>
-                    <li>
-                        <a href="#orcamento">ORÇAMENTO</a>
-                    </li>
-                    <li>
-                        <a href="#contatos">CONTATOS</a>
-                    </li>
+                    
+                    <li><a href="#servicos">serviços</a></li>
+                    <li><a href="#comunidade">comunidade empreender</a></li>
+                    <li><a href="#clientes">clientes</a></li>
+                    <li><a href="#orcamento">orcamento</a></li>
+                    <li><a href="#contatos">contatos</a></li>
                 </ul>
             </menu>
-            <ul>
-                <li class="redessociais" >
-                    <a href="https://www.facebook.com/MeetAssessoria/" target="_blank">
-                        <img src="images/redessociais/cor-facebook-40.png" alt="facebook">
-                    </a>
-                    <a href="https://www.instagram.com/meetassessoria/" target="_blank">
+
+            <div class="redessociais">
+                <a href="https://www.facebook.com/MeetAssessoria/" target="_blank">
+                    <img src="images/redessociais/cor-facebook-40.png" alt="facebook">
+                </a>
+                <a href="https://www.instagram.com/meetassessoria/" target="_blank">
                     <img src="images/redessociais/cor-instagram-40.png" alt="instagran">
-                    </a>
-                    <a href="https://www.linkedin.com/company/meetassessoria/?originalSubdomain=br" target="_blank">
+                </a>
+                <a href="https://www.linkedin.com/company/meetassessoria/?originalSubdomain=br" target="_blank">
                     <img src="images/redessociais/cor-linkedin-40.png" alt="instagran">
-                    </a>
-                </li>
-            </ul>
+                </a>
+            </div>
+
         </nav>
 
-        <main>
-            <!-- Principal
-            <!-- <section>seções que pode conter as noticias separado por seções</section> -->
+        <main class="conteudo">
             <section id="principal">
                 <article>
                     <h1>QUE TAL SE PREOCUPAR COM O QUE REALMENTE IMPORTA?</h1>
@@ -87,33 +79,68 @@
                     <p>Você cuida do sue cliente. Nós cuidamos do resto.</p>
                     <br>
                     <a href="#resultados"><button>CONHEÇAR</button></a>
+                    
                 </article>
             </section>
-                        
             <section id="resultados">
                 <article>
-                    <p>SEÇÃO 2</p>
+                    <h2>resultados</h2>
                 </article>
             </section>
-            <!-- 
-            <section id="s3"><p>SEÇÃO 3</p></section>
-            <section id="s4"><p>SEÇÃO 4</p></section>
-            <section id="s5"><p>SEÇÃO 5</p></section>
-            -->
+            <section id="especialidades">
+                <article>
+                    <h2>Especialidades da Meet Assessoria</h2>
+                </article>
+            </section>
+            <section id="micro">
+                <article>
+                    <h2>Planos para Micro Empresas com benefícios incríveis</h2>
+                </article>
+            </section>
+            <section id="mei">
+                <article>
+                    <h2>Planos especiais para MEI’s</h2>
+                </article>
+            </section>
+            <section id="servicos">
+                <article>
+                    <h2>Além disso, o que a Meet pode te oferecer?</h2>
+                </article>
+            </section>
+            <section id="comunidade">
+                <article>
+                    <h2>Área da Comunidade</h2>
+                </article>
+            </section>
+            <section id="clientes">
+                <article>
+                    <h2>Nossos melhores clientes</h2>
+                </article>
+            </section>
+            <section id="orcamento">
+                <article>
+                    <h2>Gostou? Então peça um orçamento!</h2>
+                </article>
+            </section>
+            <section id="contatos">
+                <article>
+                    <h2>Área de Contatos</h2>
+                </article>
+            </section>
         </main>
+
+
         <!-- <aside>Relacionado</aside>
         <footer>Rodape</footer> -->
 
         <script>
+
             function mudouTamanho() {
                 if (window.innerWidth >= 768) {
                     menu.style.display = 'block';
-                    /*sub_menu.style.display = 'block';*/
                 } else {
                     menu.style.display = 'none';
-                    /*sub_menu.style.display = 'none';*/
                 }
-                
             }
 
             function clickMenu() {
@@ -124,13 +151,10 @@
                 }
             }
 
-            function clickPlano() {
-                if (sub_menu.style.display == 'block') {
-                    sub_menu.style.display = 'none';
-                } else {
-                    sub_menu.style.display = 'block';
-                }
-            }
+            $('.plano-btn').click(function() {
+                $('nav ul .plano-show').toggleClass("show");
+                $('nav ul .expand').toggleClass("rotate");
+            });
 
         </script>
 
