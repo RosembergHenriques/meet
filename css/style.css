@@ -50,7 +50,7 @@ html {
 
 body {
     /* fonte padrão usada em todo o site */
-    min-width: 480px;
+    /*min-width: 460px;*/
     background-color: var(--cor-branca);
     display: flex;
     flex-direction: row;
