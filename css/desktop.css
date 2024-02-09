@@ -34,5 +34,21 @@
         margin-left: 250px;
     }
 
+    #principal article {
+        max-width: 650px;
+    }
+
+    #principal article h1 {
+        font-size: 38px;
+    }
+    
+    #principal article p {
+        font-size: 28px;
+    }
+
+    #principal article button {
+        font-size: 18px;
+    }
+
 
 }

@@ -41,5 +41,18 @@
     section {
         margin-left: 250px;
     }
+ 
+    #principal article {
+        max-width: 550px;
+     }
+ 
+     #principal article h1 {
+        font-size: 30px;
+    }
+    
+    #principal article p {
+        font-size: 20px;
+    }
+
 
 }

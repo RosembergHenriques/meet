@@ -50,7 +50,7 @@ html {
 
 body {
     /* fonte padrão usada em todo o site */
-    min-width: 500px;
+    min-width: 480px;
     background-color: var(--cor-branca);
     display: flex;
     flex-direction: row;
@@ -185,14 +185,53 @@ section {
 }
 
 #principal {
-    padding: 20px;
     background-image: url("../images/fundo-principal.jpg");
     background-position: center center; /* pocisiona no centro eixo x e y */
     background-repeat: no-repeat; /* faz com que a imagem não se repita */
     background-size: cover; /* picota a imegem para preencher todos os expaços  */
     color: var(--cor-dourado-claro);
-    color: var(--cor-dourado-claro);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
 }
+
+#principal article {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    max-width: 470px;
+    gap: 36px;
+}
+
+#principal article h1 {
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+#principal article p {
+    font-size: 18px;
+
+}
+
+#principal article button {
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0px 0.5px 3px var(--cor-preta);
+    background-color: var(--cor-dourado-claro);
+    color: var(--cor-branca);
+    text-transform: uppercase;
+}
+
+#principal article button:hover {
+    cursor: pointer;
+    background-color: var(--cor-branca);
+    color: var(--cor-dourado);
+    
+}
+
+
 
 
 
